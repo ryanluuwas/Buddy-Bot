@@ -63,10 +63,10 @@ async def help(ctx):
 
 # -------- Profanity Filter ------------ #
 
-os.chdir(r"C:\Users\Ryan\Desktop\Discord")
+os.chdir(r"C:\Users\Ryan\Documents\GitHub\Discord-Bot")
 
 # Opens Bad word list txt file and stores it into a list
-with open('badwords.txt') as f:
+with open(r'lexicon\badwords.txt') as f:
     badwords = [row[0] for row in csv.reader(f, delimiter = '\t')]
 
 @client.event
